@@ -1,0 +1,26 @@
+<!-- Extends base -->
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %} Results {% endblock %}
+
+<!-- CSS -->
+{% block CSS %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/reults.css')}}">    
+{% endblock CSS %}
+
+<!-- Content -->
+{% block content %}
+<div id="full-content">
+    <div id="main-c">
+        <h2 id="Result">
+            {% if pred=="g" %}
+                The {{name}} is a very Good Wine. 
+            {% else %}
+                The {{name}} is a bad Wine. 
+            {% endif %}
+        </h2>
+        <a href="{{url_for('winepred')}}" class="btn btn-primary" tabindex="-1" role="button">Predict Another Wine Quality</a>
+    </div>
+</div>
+{% endblock content %}

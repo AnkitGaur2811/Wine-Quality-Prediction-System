@@ -1,0 +1,51 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Uchen&display=swap');
+/* Content */
+#full-content{
+    background-image: url("/static/Img/background-about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 38.5rem;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+#main-c{
+    background-color:rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    color:black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width: 75%;
+}
+/* About */
+#main-c #aboutheading{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Uchen', serif;
+}
+#main-c #aboutcontent{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#main-c  #contact{
+    text-align: center;
+    font-weight: bolder;
+}
+#main-c  #contact .heading{
+    display: inline;  
+    font-family: 'Uchen', serif;
+}
+#main-c  #contact .content{
+    display: inline; 
+    text-decoration: none;
+    color: black; 
+    font-family: 'Josefin Sans', sans-serif;
+}

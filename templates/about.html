@@ -1,0 +1,34 @@
+<!-- Extends base -->
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %} About {% endblock %}
+
+<!-- CSS -->
+{% block CSS %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/about.css')}}">    
+{% endblock CSS %}
+
+<!-- Content -->
+{% block content %}
+    
+<div id="full-content">
+    <div id="main-c">
+        <h2 id="aboutheading">
+            About
+        </h2>
+        <p id="aboutcontent">
+            Hi, I am <strong>Ankit Gaur</strong> Final year engneering Student at Bhagwan Parshuram Institute of Technology(GGSIPU). This is a hobby project of mine in this project combines two skills of mine i.e. Machine learning and Web developent. I Used HTML, CSS for Frontend, Flask for Backend, Numpy, Pandas, Matplotlib, Seaborn, sci-kit learn for Machine learning. The Model used is Random Forest Classifier. The prediction accuracy is around 80%.<br> Hope you like the project kindly Contact by clicking below links.
+        </p>
+        <div id="contact">
+                <p class="heading">LinkedIn :</p>
+                <a class="content"href="https://www.linkedin.com/in/ankit--gaur/">ankit--gaur</a>
+                <br>
+                <p class="heading">Github :</p>
+                <a class="content" href="https://github.com/AnkitGaur2811">AnkitGaur2811</a>
+                <br>
+                <p class="heading">Email :</p>
+                <a class="content" href="mailto: ankitgaur1460@gmail.com">ankitgaur1460@gmail.com</a>
+            </div>
+    </div>
+{% endblock content %}

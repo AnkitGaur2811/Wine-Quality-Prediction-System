@@ -1,0 +1,29 @@
+<!-- Extends base -->
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %} Home {% endblock %}
+
+<!-- CSS -->
+{% block CSS %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/home.css')}}">    
+{% endblock CSS %}
+
+<!-- Content -->
+{% block content %}
+    <div id="full-content">
+        <div id="main-c">
+            <div class="text-wrapper">
+                <h2 id="title">
+                    Wine Quality Prediction System
+                </h2>
+                <p id="subtitle">
+                    Welcome, to our website we predict quality of wine based on Chemical Parameters Our predictions are <strong>80%</strong> accurate.
+                </p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="{{url_for('winepred')}}" class="btn btn-primary" tabindex="-1" role="button">Predict Quality Now</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

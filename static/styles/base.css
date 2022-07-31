@@ -1,0 +1,28 @@
+*{
+    /* background-color:aqua; */
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #58181F;
+}
+.nav-item:hover{
+    background-color:#F0616D;
+    border-radius: 1rem;;
+}
+/* Content */
+.content{
+    height: 38.5rem;
+    /* display: flex;
+    justify-content:center;
+    align-items:center; */
+}
+/* footer */
+.footer{
+    background-color:#58181F;
+    color:#F3EED9;
+    height: 3.1rem;
+}

@@ -1,0 +1,115 @@
+<!-- Extends base -->
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %} Prediction {% endblock %}
+
+<!-- CSS -->
+{% block CSS %}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/prediction.css')}}">    
+{% endblock CSS %}
+
+<!-- Content -->
+{% block content %}
+    <div id="full-content">
+        <div id="main-c">
+            <div class="text-wrapper">
+                <h2 id="title">
+                    Take your Predictions here
+                </h2>
+                <p id="subtitle">
+                    Enter the value of Chemical Parameters if decimal format and inthe unit specified.
+                </p>
+            </div>
+            <div id="inputs" class="grid-4col">
+                <form  method="post" action="{{url_for('winepred')}}">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="WineName" class="form-control" placeholder="Wine Name" aria-label="Wine Name" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="col">
+                            <input type="text" name="FixedAcidity" class="form-control" placeholder="Fixed acidity" aria-label="Fixed acidity" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="VolatileAcidity" class="form-control" placeholder="Volatile acidity" aria-label="Volatile acidity" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="col">
+                            <input type="text" name="CitricAcid" class="form-control" placeholder="Citric acid" aria-label="Citric acid" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="ResidualSugar" class="form-control" placeholder="Residual sugar" aria-label="Residual Sugar" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="col">
+                            <input type="text" name="Chlorides" class="form-control" placeholder="Chlorides" aria-label="Chlorides" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="Free_sulfur_dioxide" class="form-control" placeholder="Free sulfur dioxide" aria-label="Free sulfur dioxide" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="col">
+                            <input type="text" name="Total_sulfur_dioxide" class="form-control" placeholder="Total sulfur dioxide" aria-label="Total sulfur dioxide" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="Density" class="form-control" placeholder="Density" aria-label="First name" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="col">
+                            <input type="text" name="pH" class="form-control" placeholder="pH" aria-label="pH" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="Sulphates" class="form-control" placeholder="Sulphates" aria-label="Sulphates" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="col">
+                            <input type="text" name="Alcohol"class="form-control" placeholder="Alcohol" aria-label="Alcohol" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Predict Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
